@@ -1,0 +1,99 @@
+*{
+  
+}
+/* .p2, .p1{ */
+    /* color: chartreuse; */
+    /* font-size: 30px; */
+/* } */
+/* selector select HTML element
+    CSS single element
+    CSS Grouping
+    CSS ID Selector
+    CSS Class selector
+*/
+/* h1{ */
+    /* color: red; */
+/* } */
+/* p{ */
+    /* color:darkgoldenrod; */
+/* } */
+/* #p1{ */
+   /* color:green;  */
+   /* background-color: aqua; */
+/* } */
+/* .p2, #p1{ */
+    /* color: brown; */
+    /* background-color: chocolate; */
+/* } */
+
+.div1 *{
+    background-color: darkolivegreen;
+}
+
+input[name="firstName"]
+{
+    background-color: blue;
+}
+div p#p1{
+
+}
+
+p {
+    background-color: rgb(255, 72, 0)!important;
+  }
+  /* 
+  Single and multi-line comment
+  */
+  /* FONTS */
+  /* Web safe fonts  come as pre-installed with most of the OS. */
+  /* Web fonts  import (download) from the internet. */
+  @font-face {
+    font-family: "RobotoCondenced";
+    src: url(/Roboto_Condensed/RobotoCondensed-Bold.ttf) format("truetype");
+    font-size: 30px;
+
+  }
+
+  .divHeading{
+    font-family: "RobotoCondenced";
+  }
+  .font{
+    font-size: 40px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    /* font-variant: small-caps; */
+    color: brown;
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 100px;
+    letter-spacing: 1px;
+    word-spacing: 30px;
+    text-decoration:line-through double;
+    font-style: oblique 50deg;
+
+  }
+/* COLORS IN CSS */
+.heading1{
+    /* 
+    colour name
+    hexadecimal value for a color
+    rgb
+    HSL - Hue, Saturation, Lightness
+    */
+    color:#DAA06D; 
+    /* background-color: rgba(227, 242, 64, 0.5); */
+    background-color: hsla(0, 79%, 29%,0.7);
+
+
+}
+body{
+    background-image: url("/Images/d.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.opecity{
+    background-image: url("/Images/c.jpg");
+    
+    width: 200px;
+    height: 200px;
+    opacity: 0.7;
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      <li>
+        Web Designing Tools
+        <ul>
+          <li>
+            HTML
+            <ul>
+              <li>HTML4</li>
+              <li>HTML5</li>
+            </ul>
+          </li>
+          <li>
+            CSS
+            <ul>
+              <li>CSS 1.0</li>
+              <li>CSS 2.0</li>
+              <li>CSS 3.0</li>
+            </ul>
+          </li>
+          <li>JavaScript</li>
+          <li>Responsive in 19 June</li>
+        </ul>
+      </li>
+
+      <li>
+        Web Development Tools
+        <ul>
+          <li type="square">PHP</li>
+          <li>
+            .NET
+            <ul>
+              <li>C#.NET</li>
+              <li>VB.NET</li>
+              <li>ASP.NET</li>
+            </ul>
+          </li>
+          <li>JSP</li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="header"></div>
+    <div class="footer"></div>
+    <header></header>
+    <footer></footer>
+    <!-- Semantic Tags -->
+    <!-- these are elements which describe the job they do -->
+    <header>
+      <a href="firstDay.html" target="_blank">HTML</a>
+      <a href="firstDay.html">HTML</a>
+      <a href="firstDay.html">HTML</a>
+    </header>
+    <footer>
+      <a href="firstDay.html" target="_blank">HTML</a>
+      <a href="firstDay.html">HTML</a>
+      <a href="firstDay.html">HTML</a>
+    </footer>
+    <section>
+      <a href="firstDay.html" target="_blank">HTML</a>
+      <a href="firstDay.html">HTML</a>
+      <a href="firstDay.html">HTML</a>
+    </section>
+    <figure>
+      <img src="/Images/c.jpg" alt="Flower" />
+      <figcaption>1. Flower Picture</figcaption>
+    </figure>
+    <nav>
+      <a href="firstDay.html" target="_blank">HTML</a>
+      <a href="firstDay.html">HTML</a>
+      <a href="firstDay.html">HTML</a>
+    </nav>
+    <div>
+      <a href="firstDay.html" target="_blank">HTML</a>
+      <a href="firstDay.html">HTML</a>
+      <a href="firstDay.html">HTML</a>
+    </div>
+    <!-- 
+TODO
+Create an article having title and some details
+create a simple navbar having three tab with links open
+add a picture with caption
+use sematic tages
+
+     -->
+    <!-- HTML Forms -->
+    <!-- A form uses the <form> tag (semantic tag :) ) -->
+    <!-- For each row of the form two lines of code are needed using <label> and <input>-->
+
+    <!-- <label> will be the text describing the box e.g. "First name:", it will also have a for attribute 
+             that enables it to link with the the input's id (these need to be the same)-->
+
+    <!-- <input> will have multiple attributes, these will change depending on input type.
+             Standard attributes include "type"(determines type of input), "id"(may be use by CSS or JS) 
+             and name(this will link to the label via "for") -->
+
+    <!-- Basic -->
+    <form action="">
+      <label for="name">Enter your Name</label>
+      <input type="text" id="name" name="name" />
+    </form>
+    <!--  Selection option -->
+    <select name="" id="">
+      <option value="">Select Country</option>
+      <option value="UK">United Kingdom</option>
+      <option value="USA">United State of America</option>
+      <option value="Germany">Germany</option>
+    </select>
+    <!-- Field Set and Legend  -->
+    <!-- they are used to group relevant items -->
+    <br />
+    <br />
+    <br />
+    <fieldset>
+      <legend>User Login Form</legend>
+      <form action="">
+        <input type="text" id="userName" /> <br /><br />
+        <input type="password" id="password" /><br /><br />
+        <input type="submit" />
+      </form>
+    </fieldset>
+    <br />
+    <br />
+    <br />
+    <!-- ----------------------------------------------------------- -->
+    <!-- Cellpadding is  between a table cell's 
+    border and the content present in it. Cellspacing basically defines the -->
+    <!-- space present between individual adjacent cells. -->
+    <form action="">
+      <table
+        width="400px"
+        cellpadding="10"
+        cellspacing="0"
+        style="background-color: #222536; color: #d2d636"
+      >
+        <tr style="background-color: #de8704">
+          <td colspan="2">Sign Up</td>
+        </tr>
+        <tr>
+          <td>First Name</td>
+          <td>
+            <input
+              type="text"
+              placeholder="Enter First Name"
+              spellcheck="true"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Last Name</td>
+          <td><input type="text" placeholder="Enter Last Name" /></td>
+        </tr>
+        <tr>
+          <td>Date of Birth</td>
+          <td>
+            <input type="date" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Gender</td>
+          <td>
+            <input type="radio" name="gender" />Male
+            <input type="radio" name="gender" />Female
+          </td>
+        </tr>
+        <tr>
+          <td>Country</td>
+          <td>
+            <select>
+              <option>Country</option>
+              <option>USA</option>
+              <option>UK</option>
+              <option>Japan</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>E-mail</td>
+          <td><input type="text" placeholder="Enter E-mail" /></td>
+        </tr>
+        <tr>
+          <td>Phone</td>
+          <td>
+            <input type="text" placeholder="Enter Phone" />
+            <input type="tel" />
+          </td>
+        </tr>
+        <tr>
+          <td>Password</td>
+          <td><input type="password" /></td>
+        </tr>
+        <tr>
+          <td>Confirm Password</td>
+          <td><input type="password" /></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="checkbox" />I Agree to the Terms of use</td>
+        </tr>
+        <tr>
+          <td colspan="2" style="background-color: #de8704">
+            <input type="Submit" class="submit" value="Save" />
+            <input type="Reset" value="Cancel" class="reset" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+  &nbsp;
+</html>

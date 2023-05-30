@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ol type="A">
+      <li>
+        HTML
+        <ol type="a">
+          <li>HTML1</li>
+          <li>HTML1</li>
+          <li>HTML1</li>
+        </ol>
+      </li>
+      <li>
+        CSS
+        <ol type="a" start="4">
+          <li>CSS1</li>
+          <li>
+            CSS1
+            <ul>
+              <li>Cascading Style Sheet</li>
+              <li>Cascading Style Sheet</li>
+              <li>Cascading Style Sheet</li>
+            </ul>
+          </li>
+          <li>CSS1</li>
+        </ol>
+      </li>
+      <li>HTML</li>
+    </ol>
+
+    <!-- --------------------------------------- -->
+    <table border="1" cellpadding="10">
+      <tr>
+        <td>User Name</td>
+        <td><input type="text" autofocus /></td>
+      </tr>
+    </table>
+    <textarea
+      name=""
+      id=""
+      cols="60"
+      rows="30"
+      required
+      maxlength="10"
+      placeholder="Write your essay here!"
+      style="resize: none"
+    ></textarea>
+    <select name="" id="">
+      <option value="">UK</option>
+    </select>
+    <!--  data list -->
+
+    <input list="country" name="" type="" />
+    <datalist id="country" name="">
+      <option value="UK">United Kingdom</option>
+      <option value="USA">United State of America</option>
+    </datalist>
+
+    <input type="range" list="number" value="0" min="0" max="10" />
+    <datalist id="number">
+      <option>2</option>
+      <option>4</option>
+      <option>6</option>
+      <option>8</option>
+      <option>10</option>
+    </datalist>
+    <input type="color" list="color" value="#ff0000" />
+    <datalist id="color">
+      <option>#ff0000</option>
+      <option>#cc0000</option>
+      <option>#990000</option>
+      <option>#660000</option>
+    </datalist>
+    <!-- TODO
+    use field set and legend to create colour choosing blue options
+    have Meal Deal option using datalist.
+    
+    -->
+
+    <fieldset style="width: 500px; border: 500px">
+         
+      <legend>Choosing Meal deal    </legend>
+
+      <input type="text" list="menu" />
+
+      
+  </body>
+</html>
