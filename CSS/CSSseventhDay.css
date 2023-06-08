@@ -1,0 +1,96 @@
+/*
+!Which CSS property is used to smoothly change properties of CSS? Ismail
+   Transition
+!When using transition property in CSS, which two point are important? Alejandro
+    specify the property and the duration for the effect to take place
+!How we can make animate an element of HTML using CSS?  Rocky
+    specify the animation css style in the Keyfram
+    we need to bind the Keyfram to the element
+!Which property is used to bind Keyfram style to an element? Vairalakshmi
+    animation-name:
+!How to rotate an elment 50 degree which has class div1? Yousef Yaghoubi
+    .div1{transform:rotate(50deg);}
+!Which method of transform property was used to move an element from it's position? Zineb
+   transform: translate()
+!When do we used transform property? Alfredo
+   when we want ot move, skew, rotate and reize an element.
+*/
+/*Grid*/
+
+.gridContainer{
+    display:grid;
+    background-color: bisque;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px auto 150px;
+    column-gap: 5px;
+    row-gap: 5px;
+}
+.gridContainer div{
+    background-color: aqua;
+}
+.header{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.menu{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.main{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+   
+}
+.right{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.footer{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+/*
+
+*/
+@keyframes moveDiv{
+
+30%{
+    transform: translateX(200px);
+}
+60%{
+    transform: translate(200px,-200px);
+}
+100%{
+    transform: translateX(0px);
+    transform: translateX(0px);
+}
+}
+
+.animatedDiv{
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    animation-name: moveDiv;
+    animation-duration: 5s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+}
+.animatedDiv1{
+    transform: translateY(200px);
+    width: 50px;
+    height: 50px;
+    background-color: rgb(43, 226, 131);
+}
+/*
+
+*/
+
